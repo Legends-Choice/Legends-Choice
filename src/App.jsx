@@ -1,62 +1,11 @@
-node_modules/
-build/
-.env
-.env.local
-.DS_Store
+input:   {width:"100%",background:LIGHT.surface,border:`1px solid ${LIGHT.borderFaint}`,borderRadius:8,padding:"12px 14px",color:LIGHT.text,fontSize:14,marginBottom:24,boxSizing:"border-box",fontFamily:"Georgia,serif",outline:"none"},
+  inputDark:{width:"100%",background:DARK.surface,border:`1px solid ${DARK.borderFaint}`,borderRadius:8,padding:"12px 14px",color:DARK.text,fontSize:14,marginBottom:24,boxSizing:"border-box",fontFamily:"Georgia,serif",outline:"none"},
 
-{
-  "name": "legends-choice",
-  "version": "1.0.0",
-  "private": true,
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test"
-  },
-  "eslintConfig": {
-    "extends": ["react-app"]
-  },
-  "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
-  }
-}
+  primary: {width:"100%",padding:"14px",border:"none",borderRadius:8,color:"#fff",fontSize:12,fontWeight:700,letterSpacing:2,cursor:"pointer",fontFamily:"Georgia,serif",background:LIGHT.purple},
+  primaryDark:{width:"100%",padding:"14px",border:"none",borderRadius:8,color:"#fff",fontSize:12,fontWeight:700,letterSpacing:2,cursor:"pointer",fontFamily:"Georgia,serif",background:DARK.purple},
 
-# Legends Choice — Premium Leadership Simulation
+  ghost:   {width:"100%",padding:"12px",border:`1px solid ${LIGHT.borderFaint}`,borderRadius:8,background:"none",color:LIGHT.textMuted,fontSize:11,letterSpacing:1,cursor:"pointer",fontFamily:"Georgia,serif"},
+  ghostDark:{width:"100%",padding:"12px",border:`1px solid ${DARK.borderFaint}`,borderRadius:8,background:"none",color:DARK.textMuted,fontSize:11,letterSpacing:1,cursor:"pointer",fontFamily:"Georgia,serif"},
 
-## Deployment
-
-This is a React PWA. To deploy:
-
-1. Push this folder to GitHub
-2. Connect to Vercel (vercel.com) — import the GitHub repo
-3. Vercel builds and deploys automatically
-
-## Adding New Simulations
-
-To add Malta or Athens:
-1. Open `src/App.jsx`
-2. Find the `SIMULATIONS` object
-3. Update `valletta` or `athens` — set `comingSoon: false` and add modules
-4. Push to GitHub → Vercel redeploys automatically
-
-## Local Development
-
-```
-npm install
-npm start
-```
-
-{
-  "buildCommand": "react-scripts build",
-  "outputDirectory": "build",
-  "framework": "create-react-app",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
-}
+  optCard: {border:"1px solid",borderRadius:12,padding:16,marginBottom:12,cursor:"pointer",transition:"all 0.2s"},
+};
